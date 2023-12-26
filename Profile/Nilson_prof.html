@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome to my Website-Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-kJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</head>
+</head>
+<body>
+    <div id="header">
+        <div class="container">   
+            <nav>
+                <img src="https://bisu.edu.ph/wp-content/uploads/2022/05/cropped-logo_favicon.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact</a></li>   
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX DESIGN</p>
+                <h3>Hi, I'm <span>Nilson Rabanes</span><br>From Antequera, Bohol, Philippines</h3>
+            </div>
+        </div>
+    </div>     
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/meme.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h3 class="sub-title">About Me</h3>
+                    <p>Hello there! <i>I'm Nilson Rabanes</i>, a passionate IT student on a mission to decode the intricate language of technology and innovation. From coding to networking, I thrive on the challenges that the ever-evolving IT landscape throws my way. Currently enrolled in Bachelor of Science in Information Technology at Bohol Island State University, I'm fueled by a relentless curiosity to explore the boundless possibilities within the realm of information technology.</p>
+
+                    Skills Snapshot:
+                    <ul>
+                        <ul>
+                            <li><b>Programming:</b> Java, Python, C++</li>
+                            <li><b>Networking:</b> Configuring routers, troubleshooting, networking protocols</li>
+                            <li><b>Graphic Design:</b> Adobe Photoshop, Adobe Illustrator for logo design</li>
+                            <li><b>Systems Admin:</b> Proficient in managing servers</li>
+                        </ul>                          
+
+                    <h4><b>Interests:</b></h4>
+                    <p>In addition to my technical prowess, I'm fascinated by emerging technologies such as artificial intelligence and cybersecurity. Beyond the screen, you'll find me exploring the latest tech blogs, attending hackathons, and soaking in the wisdom of IT pioneers.</p>
+
+                    <h4><b>Projects Portfolio:</b></h4>
+                    <ul>
+                        <li><b>Smart Home Automation System:</b> Developed an intuitive home automation system that integrates IoT devices.</li>
+                        <li><b>SecureChat App:</b> Engineered a secure messaging application with end-to-end encryption.</li>
+                        <li><b>HealthTrack:</b> Created a health monitoring application utilizing data analytics for personalized insights.</li>
+                    </ul>
+
+                    <p>Join me on this exhilarating journey through the digital realms as I continue to unravel the mysteries of IT, one project at a time. Let's innovate, collaborate, and build a future where technology enhances every aspect of our lives!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('interest')">Interest</p>
+                        <p class="tab-link" onclick="opentab('educational')">Educational</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Encoder</span><br>Coding</li>
+                            <li><span>Design</span><br>Designing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="interest">
+                        <ul>
+                            <li><span>Cook</span><br>Cooking</li>
+                            <li><span>Book</span><br>Reading</li>
+                            <li><span>K-drama</span><br>Watching</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="educational">
+                        <ul>
+                            <li><span>2023</span><br>Design Manager at Idea factory</li>
+                            <li><span>2025</span><br>Design Training at BCB Institute</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="Projects">
+        <div class="container">
+            <h3 class="sub-title">My Projects</h3>
+            <div class="projects-list">
+                <div>
+                    <h3>Encoder</h3>
+                    <p>In machinery, an encoder is a sensing device that provides feedback on motion, position, count, speed, or direction.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h3>Design</h3>
+                    <p>Design is a crucial aspect of any product or service, as it can influence the user's perception of the product and its functionality.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>Contact.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>09511199324</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-Instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right"></div>
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.querySelectorAll(".tab-link");
+        var tabcontents = document.querySelectorAll(".tab-contents");
+    
+        function opentab(about) {
+            // Hide all tab contents
+            tabcontents.forEach(function(tabcontent) {
+                tabcontent.style.display = "none";
+            });
+    
+            // Remove the "active-link" class from all tab links
+            tablinks.forEach(function(tablink) {
+                tablink.classList.remove("active-link");
+            });
+    
+            // Display the selected tab content
+            document.getElementById(about).style.display = "block";
+    
+            // Add the "active-link" class to the clicked tab link
+            event.currentTarget.classList.add("active-link");
+        }
+    </script>
+    
+
+    </body>
+    </html>
+   

@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: rgb(8, 7, 7);
+    color: yellow;
+  }
+  
+  #header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://scontent.fceb2-1.fna.fbcdn.net/v/t39.30808-6/387842457_2406136166440517_2276103999601745551_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9534ce&_nc_eui2=AeGNSRx1pi9SbwupyoRnilivx2RwZidZzIfHZHBmJ1nMh6vdle8T5noXua-VVyCmv1Q62o9EOkdy5JVoLxCwqdLL&_nc_ohc=DpxvPCM-2YkAX8TL9Pm&_nc_ht=scontent.fceb2-1.fna&cb_e2o_trans=t&oh=00_AfDONf5XY-q46yFts8hCP2w6S7d6kNtpcWQI01p8PvIGMg&oe=658E8C06);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .container {
+    padding: 10px 10%;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    width: 140px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+  }
+  
+  nav ul li a {
+    color: #ffff00;
+    text-decoration: none;
+    font-size: 48px;
+    position: relative;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  
+  .header-text {
+    margin-top: 39%;
+    font-size: 30px;
+  }
+  
+  .header-text h1 {
+    font-size: 60px;
+    margin-top: 150px;
+  }
+  
+  .header-text h1 span {
+    color: black;
+  }
+  
+  /* -------------about me-------------*/
+  #about {
+    padding: 80px 0;
+    color: yellow;
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/com.jpg);
+    background-size: cover;
+    background-position: center;
+    font-size: 17px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .about-col-1 {
+    flex-basis: 35%;
+  }
+  
+  .about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  .about-col-2 {
+    flex-basis: 60%;
+  }
+  
+  .sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: yellow;
+  }
+  
+  .tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+  }
+  
+  .tab-link {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .tab-link::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: blue;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+  }
+  
+  .tab-link.active-link::after {
+    width: 50%;
+  }
+  
+  .tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+  }
+  
+  .tab-contents ul li span {
+    color: yellow;
+    font-size: 18px;
+  }
+  
+  .tab-contents {
+    display: none;
+  }
+  
+  .tab-contents.active-tab {
+    display: block;
+  }
+  
+  /*------------project--------*/
+  #projects {
+    padding: 70px 200%;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-bottom: 50px;
+  }
+  
+  .projects-list div {
+    background: none;
+    padding: 100px;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .projects-list div i {
+    font-size: 20%;
+    margin-bottom: 00px;
+  }
+  
+  .projects-list div h2 {
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 15px;
+  }
+  
+  /*-----------contact-------*/
+  #contact {
+    padding: 40px 20%;
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .contact-left {
+    flex-basis: 35%;
+  }
+  
+  .contact-right {
+    flex-basis: 60%;
+  }
+  
+  .contact-left p {
+    margin-top: 30px;
+  }
+  
+  .contact-left p i {
+    color: black;
+    margin-top: 15px;
+    font-size: 25px;
+  }
+  
+  .social-icons {
+    margin-top: 30px;
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: blue;
+    display: inline-block;
+  }
+  
+  .social-icons a:hover {
+    color: black;
+    transform: translateY(-5px);
+  }
+  
+  .btn.btn2 {
+    display: inline-block;
+    background: white;
+  }
+  
+  .contact-right forms {
+    width: 100%;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: black;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+  }
+  
